@@ -26,7 +26,7 @@ import { YouTubeSearchComponent } from '../app/you-tube-search/you-tube-search.c
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [/*youTubeSearchInjectables*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
