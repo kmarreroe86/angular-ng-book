@@ -10,6 +10,8 @@ import { SearchBoxComponent } from '../app/search-box/search-box.component';
 import { SearchResultComponent } from '../app/search-result/search-result.component';
 import { SimpleHttpComponent } from '../app/simple-http/simple-http.component';
 import { YouTubeSearchComponent } from '../app/you-tube-search/you-tube-search.component';
+import { SearchResult } from './you-tube-search/search-result.model';
+import { youTubeSearchInjectables } from './you-tube-search/you-tube-search.injectables';
 
 
 @NgModule({
@@ -19,14 +21,15 @@ import { YouTubeSearchComponent } from '../app/you-tube-search/you-tube-search.c
     SearchBoxComponent,
     SearchResultComponent,
     SimpleHttpComponent,
-    YouTubeSearchComponent
+    YouTubeSearchComponent,
+    SearchResult
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [/*youTubeSearchInjectables*/],
+  providers: [youTubeSearchInjectables],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
